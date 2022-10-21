@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+:root {
+  --bg: #eee;
+  --bg2: #eaeaea;
+  --items: #111;
+  --items2: #1a1a1a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg2);
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  padding: 30px;
+  margin: auto;
+  width: fit-content;
+  border-radius: 0px 0px 16px 16px;
+  box-shadow: 0px 0px 27px -1px rgba(0, 0, 0, 0.1);
+  background-color: var(--bg);
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+  outline: 3px solid var(--items);
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+}
+nav .logo:hover {
+  transform: scale(103%);
+  transition: 0.3s;
+}
+nav .logo div {
+  font-size: 1.2em;
+  padding: 10px;
+  font-weight: 700;
+  color: var(--items);
+}
+nav .logo div:nth-child(1) {
+  background: var(--items);
+  color: var(--bg);
+}
+
+.textContainer {
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.textContainer i {
+  font-size: 10em;
+  margin-bottom: 1rem;
+  color: var(--items);
+}
+.textContainer h1 {
+  font-size: 3em;
+  margin-bottom: 0.2em;
+  color: var(--items);
+}
+.textContainer p {
+  font-size: 1.2em;
+  color: var(--items);
+}
+.textContainer .cardContainer {
+  margin-top: 10px;
+  width: 100;
+  display: flex;
+  justify-content: space-between;
+}
+.textContainer .cardContainer .card {
+  width: 50%;
+  margin: 8px;
+  overflow: hidden;
+  border-radius: 16px;
+  color: var(--bg);
+  background-color: var(--items);
+}
+.textContainer .cardContainer .card div {
+  box-shadow: 0px 0px 27px -1px rgba(0, 0, 0, 0.5);
+  padding: 20px 0px;
+}
+.textContainer .cardContainer .card p {
+  background: var(--items2);
+  padding: 20px;
+  font-size: 1em;
+  text-align: justify;
+  color: var(--bg);
+}
+
+/*# sourceMappingURL=main.css.map */
