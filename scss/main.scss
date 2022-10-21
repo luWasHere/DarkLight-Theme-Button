@@ -34,13 +34,14 @@ nav {
     box-shadow: 0px 0px 27px -1px rgba(0,0,0,0.1);
     background-color: var(--bg);
 
-    .logo{
+    .btn{
         display: flex;
         align-items: center;
         outline: 3px solid var(--items);
         border-radius: 16px;
         overflow: hidden;
         cursor: pointer;
+        user-select: none;
 
         &:hover {
             transform: scale(103%);
